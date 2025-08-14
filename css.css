@@ -1,0 +1,246 @@
+* {
+box-sizing: border-box;
+}
+a {
+text-decoration: inherit;
+color: inherit;
+}
+body {
+font-family: Tahoma;
+margin: 0;
+}
+header {
+  border-top: solid 13px #E6E6E6;
+}
+header .center {
+  display: flex;
+  width: 758px;
+  height: 185px;
+  margin: 0 auto;
+}
+header .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 608px;
+  padding-right: 65px;
+  color: white;
+  background-image: url(pic/logo.jpg), url(pic/header.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 229px 102px, auto;
+  background-position: 60px, center;
+  font-weight: 400;
+}
+header nav {
+  align-self: center;
+  width: 150px;
+}
+header .banner .text1 {
+  width: 203px;
+  font-size: 20px;
+  border-bottom: solid 1px #6CEC16;
+  padding-bottom: 7px;
+}
+header .banner .text2 {
+  width: 203px;
+  font-size: 13px;
+}
+header nav a {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding-left: 18px;
+  background-image: url(pic/arrow-normal.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  border-bottom: solid 1px #CBCACA;
+}
+header nav a:last-child {
+  border-bottom: none;
+}
+header nav a:hover {
+  background-image: url(pic/arrow-hover.gif);
+}
+main {
+  background-image: linear-gradient(to bottom, #E0E0E0, #FDFDFD 60px);
+}
+main .center {
+  display: flex;
+  width: 758px;
+  height: 100vh;
+  margin: 0 auto;
+}
+main .content {
+  order: 1;
+  width: 585px;
+  margin-left: 11px;
+  padding: 10px 45px;
+  box-shadow: 0 2px 2px 3px silver;
+  background-color: white;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+article {
+  padding-bottom: 30px;
+  border-bottom: solid 7px lightgray;
+}
+article p {
+  font-size: 14px;
+  color: #7D7D7D;
+}
+h1 {
+  color: #39A002;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+.subH1 {
+  font-size: 21px;
+  font-weight: normal;
+}
+.artData {
+  width: 220px;
+  padding-bottom: 10px;
+  display: flex;
+  color: #06507A;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: solid 1px #E6E6E6;
+}
+.author {
+  margin-left: 15px;
+}
+.author .city {
+  color: #39A002;
+}
+main nav {
+  order: 2;
+  width: 155px;
+  height: 90%;
+  margin: 15px auto auto 10px;
+  padding: 15px 0 0 5px;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 13px;
+}
+main nav a {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  background-image: url(pic/arrow3-normal.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+main nav a:hover {
+  background-image: url(pic/arrow3-hover.gif);
+}
+.navMenu {
+  margin: 0 auto 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+footer {
+  height: 50px;
+  color: white;
+  background-color: darkgray;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+@media screen and (max-width:767px) {  /* Smartphone */
+.Smart {display:block;} .Desk {display:none;}
+
+header {
+  border-top: none;
+}
+header .center {
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+}
+header .banner {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-image: none;
+  background-color: #177DEB;
+  font-weight: 400;
+}
+header .banner .text1 {
+  width: 100%;
+  font-size: 20px;
+  border-bottom: none;
+  padding-bottom: 7px;
+  margin: 0 auto;
+  text-align: center;
+}
+header .banner .text2 {
+  width: 100%;
+  font-size: 13px;
+  margin: auto;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 3.5em;
+  border-top: solid 13px #E6E6E6;
+  border-bottom: solid 13px #E6E6E6;
+}
+header nav a {
+  display: block;
+  height: auto;
+  padding-left: 0;
+  background-image: none;
+  border-bottom: none;
+  color: #228B22;
+  font-size: 18px;
+}
+header nav a:hover {
+  background-image: none;
+  color: #177DEB;
+}
+main .center {
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  border-top: solid 1px transparent;
+}
+main nav {
+  order: 2;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 0;
+  font-size: 13px;
+}
+main nav a {
+  margin-bottom: 10px;
+}
+.navMenu {
+  font-size: 140%;
+}
+.menuPoints {
+  display: none;
+}
+main .content {
+  width: 95vw;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 2px 2px 3px silver;
+  background-color: white;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.on {
+  display: block;
+}
+
+}
