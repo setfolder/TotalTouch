@@ -1,2 +1,2 @@
 # TotalTouch
-Total Touch website interface layout
+Click https://setfolder.github.io/TotalTouch/ for preview.
